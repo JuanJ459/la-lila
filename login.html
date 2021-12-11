@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>LaLila</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/businesswoman.svg" />
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- ========================= CSS here ========================= -->
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-2.min.css" />
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css" />
+</head>
+
+<body style="background: #E5E5E5">
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!-- ========================= preloader start ========================= -->
+  <div class="preloader">
+    <div class="loader">
+      <div class="spinner">
+        <div class="spinner-container">
+          <div class="spinner-rotator">
+            <div class="spinner-left">
+              <div class="spinner-circle"></div>
+            </div>
+            <div class="spinner-right">
+              <div class="spinner-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ========================= preloader end ========================= -->
+
+  <!-- ========================= header-4 start ========================= -->
+  <header class="header header-4">
+    <div class="navbar-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo/lila.png" alt="Logo" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent4"
+                aria-controls="navbarSupportedContent4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent4">
+                <ul id="nav4" class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="page-scroll" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="about.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="pricing.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="empresas.html">Empresas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="fundaciones.html">Fundaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="contact.html">Contáctanos</a>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="header-search">
+                <a href="#0"> <i class="lni lni-search-alt"></i> </a>
+                <form action="#">
+                  <input type="text" placeholder="Contenido a buscar...">
+                </form>
+              </div>
+              <!-- navbar collapse -->
+            </nav>
+            <!-- navbar -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- navbar area -->
+  </header>
+  <!-- ========================= header-4 end ========================= -->
+
+  <!-- ========================= login-style-1 start ========================= -->
+  <section class="login-section login-style-1 img-bg mb-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 col-lg-6">
+          <div class="login-content-wrapper">
+            <div class="section-title mb-40">
+              <h3 class="mb-20">Iniciar sesión</h3>
+              <p>Morbi et sagittis dui, sed fermentum ante. Pellentesque <br class="d-none d-md-block"> molestie sit
+                amet dolor vel euismod.</p>
+            </div>
+
+            <form class="login-form" method="post" id="redirect">
+              <div class="single-input">
+                <label for="login-email">Correo Electornico</label>
+                <input type="email" id="login-email" name="login-email" placeholder="Tu correo">
+                <i class="lni lni-envelope"></i>
+              </div>
+              <div class="single-input">
+                <label for="login-password">Contraseña</label>
+                <input type="password" id="login-password" name="login-password" placeholder="Ingresar Contraseña">
+                <i class="lni lni-lock"></i>
+              </div>
+
+
+              <div class="form-footer">
+                <div class="form-check mb-25">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Recuerdame
+                  </label>
+                </div>
+                <p class="mb-25"><a href="#0">¿Olvidaste tu contraseña?</a></p>
+              </div>
+
+
+
+              <div class="signup-button mb-25">
+                <button class="button button-lg radius-10 btn-block" id="btn-login">Iniciar Sesión
+                </button>
+              </div>
+
+
+
+              <p class="mb-25">¿No tienes una cuenta? <a href="login.html">Crear una</a> </p>
+
+              <script>
+
+                var correo_electronico = document.getElementById("login-email");
+                var contraseña = document.getElementById("login-password");
+                var login = document.getElementById("redirect");
+                
+                if((correo_electronico == "testhackaton@gmail.com") && (contraseña == "testhackaton1T")){
+                   login.action = "pageprofilelogin.html";
+                }
+
+
+
+              </script>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-6 align-self-end">
+          <div class="image text-lg-right d-none d-lg-block">
+            <img src="assets/img/signup/login-1/login-img.svg" alt="" class="w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========================= login-style-1 end ========================= -->
+  <!-- ========================= contact style-1 start ========================= -->
+  <section id="contact" class="contact-section contact-style-1 mb-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+
+          <div class="row">
+            <div class="col-xxl-7 col-xl-8 col-lg-10">
+              <div class="section-title mb-40">
+                <h3 class="mb-15">Escribenos!</h3>
+                <p>Si deseas ponerte en contacto con nosotros, por favor llena el siguiente formulario, estáremos
+                  felices de atenderte</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form action="assets/php/contact.php" method="POST">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="single-input">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Ingresa tu Nombre">
+                    <i class="lni lni-user"></i>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input">
+                    <label for="email">Correo Electornico</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Ingresa tu Email">
+                    <i class="lni lni-envelope"></i>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input">
+                    <label for="number">Número</label>
+                    <input type="text" id="number" name="number" class="form-input" placeholder="Ingresa tu Número">
+                    <i class="lni lni-phone"></i>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" class="form-input" placeholder="Ingresa el Motivo">
+                    <i class="lni lni-text-format"></i>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="single-input">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" class="form-input"
+                      placeholder="Aquí puedes escribirnos y a la brevedad te responderemos" rows="6"></textarea>
+                    <i class="lni lni-comments-alt"></i>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-button">
+                    <button type="submit" class="button radius-10">Enviar<i class="lni lni-telegram-original"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-image">
+      <img src="assets/img/contact/contact-1/illustation.svg" alt="">
+    </div>
+  </section>
+  <!-- ========================= contact style-1 end ========================= -->
+
+  <!-- ========================= footer style-1 footer-dark start ========================= -->
+  <footer class="footer footer-style-1 footer-dark mb-80">
+    <div class="container">
+      <div class="widget-wrapper">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <div class="logo">
+                <a href="#0"> <img width="124" height="90" src="assets/img/logo/lila.png" alt=""> </a>
+              </div>
+              <p class="desc">En LaLila, creemos y crecemos junto a ti</p>
+              <ul class="socials">
+                <li> <a href="#0"> <i class="lni lni-facebook-filled"></i> </a> </li>
+                <li> <a href="#0"> <i class="lni lni-twitter-filled"></i> </a> </li>
+                <li> <a href="#0"> <i class="lni lni-instagram-filled"></i> </a> </li>
+                <li> <a href="#0"> <i class="lni lni-linkedin-original"></i> </a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h6>Enlaces directos</h6>
+              <ul class="links">
+                <li> <a href="#0">Inicio</a> </li>
+                <li> <a href="#0">Nosotros</a> </li>
+                <li> <a href="#0">Empresas</a> </li>
+                <li> <a href="#0">Fundaciones</a> </li>
+                <li> <a href="#0">Saber más</a> </li>
+                <li> <a href="#0">Contáctanos</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h6>Servicios</h6>
+              <ul class="links">
+                <li> <a href="#0">Buscar Empleo</a> </li>
+                <li> <a href="#0">Emprendimientos</a> </li>
+                <li> <a href="#0">Capacitaciones</a> </li>
+                <li> <a href="#0">Procesos en Curso</a> </li>
+                <li> <a href="#0">Entradas Recientes</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h6>Ayuda y Soporte</h6>
+              <ul class="links">
+                <li> <a href="#0">Soporte Central</a> </li>
+                <li> <a href="#0">Chat en vivo</a> </li>
+                <li> <a href="#0">FAQ</a> </li>
+                <li> <a href="#0">Terminos y Condiciones</a> </li>
+                <li> <a href="#0">Trabaja con Nosotros</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-wrapper">
+        <!-- Comentario cualquiera -->
+      </div>
+    </div>
+  </footer>
+  <!-- ========================= footer style-1 footer-dark end ========================= -->
+
+
+  <!-- ========================= JS here ========================= -->
+  <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
+  <script src="assets/js/tiny-slider.js"></script>
+  <script src="assets/js/count-up.min.js"></script>
+  <script src="assets/js/imagesloaded.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
